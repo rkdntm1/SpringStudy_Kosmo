@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Beans>
+	<Bean>
+		<Name>STV</Name>
+		<Path>step4_DreamFramework.STV</Path>
+	</Bean>
+	<Bean>
+		<Name>LTV</Name>		
+		<Path>step4_DreamFramework.LTVAdapter</Path>
+	</Bean>
+	<Bean>
+		<Name>HTV</Name>
+		<Path>step4_DreamFramework.HTV</Path>
+	</Bean>
+	<Bean>
+		<Name>ATV</Name>
+		<Path>step4_DreamFramework.ATV</Path>
+	</Bean>
+</Beans>

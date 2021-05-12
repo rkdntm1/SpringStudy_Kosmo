@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Beans>
+	<Bean>
+		<Name>STV</Name>
+		<Path>step5_DFAnnotation.STV</Path>
+	</Bean>
+	<Bean>
+		<Name>LTV</Name>		
+		<Path>step5_DFAnnotation.LTVAdapter</Path>
+	</Bean>
+	<Bean>
+		<Name>TVUserAnno</Name>		
+		<Path>step5_DFAnnotation.TVUserOfAnno</Path>
+	</Bean>
+</Beans>
