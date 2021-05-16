@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Repository
 @NoArgsConstructor
 public class Restaurant {
-	@Autowired @Getter
+	@Autowired @Getter //의존성 주입 
 	private Chef chef;
 
 }

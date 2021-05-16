@@ -11,4 +11,10 @@ import lombok.RequiredArgsConstructor;
 public class Hotel {
 	@NonNull @Getter
 	private Chef chef;
+	
+	/*
+	public Hotel(Chef chef) {
+		this.chef = chef;
+	}
+	*/
 }

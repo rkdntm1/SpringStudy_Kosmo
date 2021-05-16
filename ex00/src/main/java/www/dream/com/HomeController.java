@@ -19,6 +19,7 @@ public class HomeController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
+	//root url로 요청하면 밑 home 으로 짝지을거다.(HandlerMapping) 
 	public String home(Locale locale, Model model) {
 		
 		Date date = new Date();

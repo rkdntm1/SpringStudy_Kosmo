@@ -22,4 +22,6 @@
 	<bean id="sqlSessFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dsHikariCP"/>
 	</bean>
+	
+	<mybatis-spring:scan base-package="www.dream.com"/>
 </beans>

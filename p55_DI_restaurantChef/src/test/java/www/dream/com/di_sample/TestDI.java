@@ -10,7 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@RunWith(SpringJUnit4ClassRunner.class) 
+@RunWith(SpringJUnit4ClassRunner.class) //junit이 객체를 불러서 test
+//어디에서 로드할지를 알려줌
 @ContextConfiguration("file:src\\main\\webapp\\WEB-INF\\spring\\root-context.xml") //여기에 들어있는정보를바탕으로 객체를 만들어라 junit아
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestDI {
@@ -22,9 +23,10 @@ public class TestDI {
 	
 	@Test
 	public void test() {
+		//context에 객체가 만들어졌을때 그 해당객체가 재사용되는지 신규생성되는지 확인하자 -> 결과 기본은 singleton이라 같은 것이로 엮여짐
 		restaurant.getChef().setName("홍길동");
-		assertNotNull(restaurant);
-		System.out.println(restaurant.getChef()); //context에 올라와있는 객체대상으로 autowired할때 같은객체에 하는건지 새롭게 만들어진 객체에 들어가는건지 = > 같은 객체로 엮어줌
+		assertNotNull(restaurant); //객체가 들어있음을 보장
+		System.out.println(restaurant.getChef()); 
 	}
 	
 	@Test
