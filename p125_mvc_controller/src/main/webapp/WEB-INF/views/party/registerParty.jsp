@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h3>회원 가입</h3>
-	<form action="/party/createParty" method="post">
+	<form action="/party/createPartyByDefault" method="post">
 		계정 이름 : <input type="text" name="name">
 		<br>
 		성별 :
@@ -22,12 +22,16 @@
 			<label for="female">여자</label>
 		</div>
 		<br>
-		 <input type="hidden" name="listContactPoint[0].contactPointType" value="addr">
-		 주소<input type="text" name="listContactPoint[0].value">
-		 <input type="hidden" name="listContactPoint[1].contactPointType" value="phoneNum">
-		 번호<input type="text" name="listContactPoint[1].value">
+		생년월일<input type="date" name="birthDate">
+		<br>
+		<input type="hidden" name="listContactPoint[0].contactPointType" value="addr">
+		주소<input type="text" name="listContactPoint[0].value">
+		<input type="hidden" name="listContactPoint[1].contactPointType" value="phoneNum">
+		번호<input type="text" name="listContactPoint[1].value">
 		 
-		 <button type="submit">가입</button>
+		<br>
+		사랑하는이의 나이 : <input type="text" name="ageOfMine">
+		<button type="submit">가입</button>
 	</form>
 </body>
 </html>
