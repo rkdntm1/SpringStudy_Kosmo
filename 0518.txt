@@ -1,0 +1,8 @@
+java author 양식 설정방법 
+ini파일에 밑에 문장을 추가해주기
+-Xmx512m 
+-Duser.name=JongPil Lee
+
+
+스프링 구동 순서
+pom.xml -> web.xml -> sevlet-context -> root-context -> controll 에서 mapping 되는 곳 -> jsp파일 -> html로 송출
